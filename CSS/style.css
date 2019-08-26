@@ -57,9 +57,9 @@ body{
     padding: 4.7px
 }
 .A,.B,.C,.D,.E,.F,.G,.H {
-    width: 153px;
-    height: 153px;
-    margin: 5px;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
 }
 .A {
     background-image: url('https://github.com/jonnygovish/IP3/blob/master/assets/portfolio/work1.jpg?raw=true');
@@ -161,4 +161,3 @@ footer{
     padding: 0 15%;
   }
 
-}
