@@ -5,10 +5,10 @@ Alex kiprop
 # Description 
 This is a website for Delani Studio.When you open it loads first and then it displays a message that welcomes you to Delani Studio.On scrolling down you will pass through different sections namely,where it describes who they are,what they do,their sevice and also what they have done they also indicated there.You are able to contact them on the contact section and check them out on their social media account by clicking on the social icons.
 # Setup
-* 1. Land on the website.
-* 2. Pass through the welcome section and about us section which describes who Delani is.
-* 3. Scroll down to the sevice section which describes what they offer.
-* 4. The contact us section is the last section where you enter your contact info and a short         message.
+* Land on the website.
+* Pass through the welcome section and about us section which describes who Delani is.
+* Scroll down to the sevice section which describes what they offer.
+* The contact us section is the last section where you enter your contact info and a short         message.
 # BDD
 
 # Behaviour
@@ -20,14 +20,14 @@ This is a website for Delani Studio.When you open it loads first and then it dis
 * A pop message
 # No Bugs
 * no isues
-# Technilogy Used
+# Technology Used
 * HTML
 * CSS
 * Bootstrap
 * Javascript
 * jQuery
 # AUTHORS CONTACT
-* Number: o727200709
+* Number: 0727200709
 * Email:kipropalex59@gmail.com
 # Licence
   MIT LICENCE
