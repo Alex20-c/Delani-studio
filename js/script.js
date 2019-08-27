@@ -1,58 +1,47 @@
-$(document).ready(function() {
-  $(".image1").click(function() {
-    $(".image1").hide(1200);
-    $(".p1").toggle(1200);
-    $(".p1").show(1200);
-  });
-  $(".p1").click(function() {
-    $(".p1").hide(1200);
-    $(".image1").toggle(1200);
-    $(".image1").show(1200);
-  });
+
+// JQUERY
+// lazy load
+$(function(){
+  $(".lazy").Lazy();
 });
-$(document).ready(function() {
-  $(".image2").click(function() {
-    $(".image2").hide(1200);
-    $(".p2").toggle(1200);
-    $(".p2").show(1200);
+
+$(document).ready(function () {
+  // loader
+  $("#Loader").fadeOut(1000);
+  $("#head").addClass("onLoad").fadeIn(2000);
+  $("html, body").scrollTop(0);
+
+  // what we do icons effect
+  $(".text").hide();
+  $(".weDo-cont").click(function () {
+    $(this).children(".text").slideToggle(500);
+    $(this).children(".hide-img").fadeToggle(500);
   });
-  $(".p2").click(function() {
-    $(".p2").hide(1200);
-    $(".image2").toggle(1200);
-    $(".image2").show(1200);
+
+  // portfolio effects
+  $(".port_desc").removeClass("here");
+  $(".port_cont").mouseover(function () {
+    $(this).children(".port_desc").addClass("here");
   });
-});
-$(document).ready(function() {
-  $(".image3").click(function() {
-    $(".image3").hide(1200);
-    $(".p3").toggle(1200);
-    $(".p3").show(1200);
+  $(".port_cont").mouseleave(function () {
+    $(this).children(".port_desc").removeClass("here").fadeIn;
   });
-  $(".p3").click(function() {
-    $(".p3").hide(1200);
-    $(".image3").toggle(1200);
-    $(".image3").show(1200);
-  });
-});
-$(document).ready(function() {
-  $(".text").hover(
-    function() {
-      $(this).animate({ opacity: "1" });
-    },
-    function() {
-      $(this).animate({ opacity: "0" });
-    }
-  );
-});
-$(document).ready(function() {
-  $("#submission").submit(function(event) {
-    var display1 = $("input:first").val();
-    var display2 = $("input#mail").val();
-    if (display1 && display2 != "") {
-      alert("Thank you " + display1 + " your subscription is well received");
-    } else {
-      alert("Invalid input");
+
+  // form submission effect
+  $("#submission").submit(function(event){
+    var data_1 = $("input:first").val();
+    var data_2 = $("input#mail").val();
+    if(data_1 && data_2 != ""  ){
+      $(".message").text("Thank you " + data_1 + " Your message has been received");
+      $(".message").removeClass("error");
+      $(".message").addClass("success");
+    }else{
+      $(".message").text("Error!!! Please fill in all the details correctly");
+      $(".message").addClass("error");
     }
     event.preventDefault();
   });
+
 });
+
+
